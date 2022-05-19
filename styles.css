@@ -40,8 +40,11 @@ html, body {
 }
 
 #text-header {
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: black;
     padding: 1% 0 0 0;
-    margin: 0;
     font-size: 78px;
     color: white;
 }
@@ -68,6 +71,7 @@ html, body {
 
 .contact-elements{
     position: absolute;
+    border-radius: 14%;
     width: 48%;
     height: 94%;
     font-size: 24px;
@@ -101,6 +105,8 @@ html, body {
     background-color: rgb(1, 65, 86);
 }
 
+
+
 #project-1{
     margin: 1%;
 }
@@ -112,4 +118,27 @@ html, body {
 #project-3{
     margin: 1% 0 0 69%;
 }
+
+h4 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+a:link { 
+    text-decoration: none;
+    color: black;
+ }
+
+
+a:visited { text-decoration: none;
+    color: black; }
+
+
+a:hover { text-decoration: none; 
+    color: black;}
+
+
+a:active { text-decoration: none;
+    color: black; }
 
