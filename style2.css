@@ -23,7 +23,8 @@ body{
 .single-content{
     position: relative;
     transition: .3s;
-    box-shadow: 10px 20px 20px rgba(0,0,0,0.8);
+
+    /* box-shadow: 10px 20px 20px rgba(0,0,0,0.8); */
 }
 
 .single-content .text-content,
@@ -36,7 +37,7 @@ body{
 .single-content:after{
     content: '';
     display: block;
-    background: rgba(140, 111, 117, 0.5);
+    background: rgba(172, 172, 172, 0.562);
     top: 20px;
     bottom: 20px;
     opacity: 0;
@@ -55,7 +56,8 @@ body{
 
 }
 
-.text-content{
+
+.text-content {
     top: 45%;
     opacity:0;
     z-index: 1;
@@ -66,19 +68,44 @@ body{
 
 }
 
+.card-frame {
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.4);
+
+}
+
+
+.card-frame:hover{
+    transition: .5s;
+
+    box-shadow: 10px 20px 20px rgba(0,0,0,0.9);
+
+}
+
+.single-content:hover .text-content{
+    opacity: 1;
+    transform: translate(0, -10%); 
+    
+}
+
+
 .text-content h5 {
     font-family: big john;
 
 }
 
-.text-content:hover{
-    opacity: 1;
-    transform: translate(0, -10%);
-    
+#card-title{
+    font-size: 64px;
+    width: 50%;
+    margin-left: 25%;
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
 
-
-
+.text-content:hover{
+    /* opacity: 1;
+    transform: translate(0, -10%); */
+    
+}
 
 
 @media only screen and (max-width: 640px) {
@@ -99,6 +126,10 @@ body{
 @media only screen and (max-width: 720px){
     
 
+}
+
+.fade-in {
+   
 }
 
 
