@@ -7,17 +7,34 @@ body{
 
 .wrapper{
     display: flex;
+    justify-content: flex-start;
 }
 
 .left{
- width: 40%;
- padding: 5px;
- 
+    width: 40%;
+    padding: 0px;
+    margin: 5px 50px 50px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.center{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.center-column{
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .right{
- width: 70%;
- padding: 20px;
+    width: 50%;
+    padding: 5px;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .single-content{
@@ -65,21 +82,42 @@ body{
     transition: .3s;
     text-align: center;
     color: #fff;
-
 }
+
 
 .card-frame {
     box-shadow: 5px 10px 15px rgba(0,0,0,0.4);
-
+    --bs-card-spacer-y: 0;
 }
-
 
 .card-frame:hover{
     transition: .5s;
-
     box-shadow: 10px 20px 20px rgba(0,0,0,0.9);
-
 }
+
+.card-info{
+    width: 150px;
+}
+
+.row>* {
+    padding-right: calc(var(--bs-gutter-x) * .1);
+    padding-left: calc(var(--bs-gutter-x) * .1);
+}
+
+.card-body-img{
+    width: 250px;
+    height: 250px;
+}
+
+.card-title-contact{
+    font-size: 20px;
+}
+
+#card-img-top{
+    width: 200px;
+    height: 200px;
+} 
+
 
 .single-content:hover .text-content{
     opacity: 1;
@@ -101,11 +139,24 @@ body{
     background-color: black;
 }
 
-.text-content:hover{
-    /* opacity: 1;
-    transform: translate(0, -10%); */
-    
+#Contact-Buttons {
+    display: flex;
+    justify-content: center;
 }
+
+#Profile-pic{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-text-description{
+    font-size: 26px;
+    text-align: center;
+    text-justify:auto;
+}
+
 
 
 @media only screen and (max-width: 640px) {
@@ -120,16 +171,18 @@ body{
     .right{
         width: 100%;
     }
+
+    .card-title-contact{
+        font-size: 12px;
+    }
     
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 800px){
     
-
-}
-
-.fade-in {
-   
+    .card-title-contact{
+        font-size: 12px;
+    }
 }
 
 
