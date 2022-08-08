@@ -1,9 +1,9 @@
-const images = ["../images/free-logo.jpg", "../images/free-logo01.jpg", "../images/free-logo02.jpg"]
+const images = ["../images/gh_01.jpg", "../images/gh_02.jpg", "../images/gh_03.jpg" , "../images/gh_04.jpg", "../images/gh_05.jpg"]
 // const carousel = document.querySelector(".card-img-top");
 const image = document.getElementById("image-slider")
 const interval = setInterval(function() {
     startCarousel()
-}, 3000)
+}, 5000)
 
 var index = 1;
 
